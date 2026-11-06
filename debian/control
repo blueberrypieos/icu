@@ -1,0 +1,26 @@
+Source: icu
+Section: libs
+Priority: optional
+Maintainer: Maxwell <maxwell@blueberrypieos.com>
+Build-Depends: pietoolchain (>= 0.1.0), clang-21:native, python3:native
+Standards-Version: 4.7.3
+Homepage: https://github.com/apple-oss-distributions/ICU
+Vcs-Git: https://github.com/blueberrypieos/icu.git -b blueberry-pie-os/latest
+Vcs-Browser: https://github.com/blueberrypieos/icu
+Rules-Requires-Root: no
+
+Package: icu
+Architecture: darwin-arm64
+Essential: yes
+Priority: required
+Depends: libcxx, libsystem
+Description: Unicode support library (libicucore)
+ ICU 78.1 provides Unicode conversion, normalization, collation,
+ formatting and locale data.
+
+Package: icu-dev
+Section: libdevel
+Architecture: darwin-arm64
+Depends: icu (= ${binary:Version})
+Description: Unicode support library: development headers
+ ICU's Unicode headers for building against libicucore.

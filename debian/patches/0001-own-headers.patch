@@ -1,0 +1,12 @@
+--- a/icu/icu4c/source/i18n/calendar.cpp
++++ b/icu/icu4c/source/i18n/calendar.cpp
+@@ -73,2 +73,2 @@
+-#include "vietnamesecal.h" // rdar://24832944
++#include <vietnamesecal.h>
+ #endif
+--- a/icu/icu4c/source/i18n/measfmt.cpp
++++ b/icu/icu4c/source/i18n/measfmt.cpp
+@@ -45,2 +45,2 @@
+-#include "unicode/uameasureformat.h"
++#include <unicode/uameasureformat.h>
+ #include "fphdlimp.h"
