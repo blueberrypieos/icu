@@ -1,3 +1,11 @@
+icu (76142.5.1.200+ds1-2) blueberry-pie-os; urgency=medium
+
+  * Build-Depend on pietoolchain-host and pietoolchain-sdk.
+  * The headers are in /usr/include, not /usr/local/include. A ZFS root
+    keeps /usr/local on its data sets, where dpkg installs nothing.
+
+ -- Maxwell <maxwell@blueberrypieos.com>  Tue, 17 Nov 2026 03:29:58 +0000
+
 icu (76142.5.1.200+ds1-1) blueberry-pie-os; urgency=medium
 
   * ICU 76142.5.1.200
